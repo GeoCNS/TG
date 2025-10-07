@@ -12,7 +12,7 @@ The package contains:
 >
 > - **Label‑free temporal super‑resolution**: a diffusion UNet is trained purely on coarse reanalysis sequences, learning to reconstruct sub‑hourly dynamics from hourly or 3‑hourly inputs without any high‑frequency ground truth.
 > - **Token‑conditioned control**: discrete tokens that encode calendar date, seasonal phase and requested lead‑time enter each cross‑attention block, allowing the user to specify arbitrary target intervals (e.g., +15 min, +30 min) in a single forward pass.
-> - **Historic reanalysis upgrade**: after ERA5‑Land pre‑training the model is fine‑tuned on NOAA‑20CR v3; it delivers a global 15‑min surface‑layer data set for 1806‑1910, opening new possibilities for extreme‑event attribution and early‑period data assimilation.
+> - **Historic reanalysis upgrade**: after ERA5‑Land pre‑training the model is fine‑tuned on NOAA‑20CR v3; it delivers a global 15‑min surface‑layer data set for 1806‑1900, opening new possibilities for extreme‑event attribution and early‑period data assimilation.
 
 ### 📁Repository Layout
 
@@ -112,6 +112,7 @@ Questions or pull‑requests are welcome:
 
 
 📧 public_wlw@163.com
+
 
 
 
