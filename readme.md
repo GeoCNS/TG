@@ -83,11 +83,11 @@ python src/train.py --config configs/noaa20_rh.yaml --infer --year 1913
 
 ## 💡📈Model and Results Overview
 
-![framework](.\pics\framework.jpg)![cross](pics\cross.jpg)
+![framework](./pics/framework.jpg)![cross](./pics/cross.jpg)
 
-![e](pics\Re.jpg)
+![e](./pics/Re.jpg)
 
-![NOAA20](pics\NOAA20.jpg)
+![NOAA20](./pics/NOAA20.jpg)
 
 ## 🧪Citation
 
@@ -107,3 +107,4 @@ Questions or pull‑requests are welcome:
 
 
 📧 public_wlw@163.com
+
