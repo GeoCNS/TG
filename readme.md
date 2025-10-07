@@ -53,6 +53,10 @@ The package contains:
   
   # install dependencies
   pip install -r requirements.txt
+
+  # download data
+  # Option A: use the helper script in ./data
+  python data/download.py
 ```
 
 ### Train (example: ERA5 2 → 1 h)
@@ -108,5 +112,6 @@ Questions or pull‑requests are welcome:
 
 
 📧 public_wlw@163.com
+
 
 
