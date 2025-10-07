@@ -1,0 +1,42 @@
+{
+  "name": "TG",
+  "variable_name": "tp",
+  "tp_threshold": 1000,
+  "random_seed": 2025,
+  "norm_factors_path": "path/to/your/dataset",
+  "latlon_path": "path/to/your/dataset",
+  "valid_time_path": "path/to/your/dataset", 
+  "pretrained_model_path": "",
+  "inference_model_path": "",
+  "train_path": "path/to/your/dataset",
+  "test_path": "path/to/your/dataset",
+  "image_resolution": 2048,
+  "random_lead_time": 0,
+  "batch_size": 512,
+  "num_epochs": 3000,
+  "weight_decay": 0.01,
+  "learning_rate": 0.00005,
+  "filters": 512,
+  "noise": 0.05, 
+  "model": "EDMPrecond_continuous",
+
+  "train": {
+    "t_min": 3,
+    "t_max": 12,
+    "delta_t": 3,
+    "conditioning_times": [-12, -6, 0, 6, 12],
+    "spacing": 1
+  },
+  "val": {
+    "t_min": 1,
+    "t_max": 1,
+    "delta_t": 1,
+    "conditioning_times": [-4, -2, 0, 2, 4],
+    "spacing": 1
+  },
+   "test": {
+     "conditioning_times": [-2, -1, 0, 1, 2],
+     "center_index": [10, 20, 30, 40],
+     "lead_time": 3
+  }
+}
