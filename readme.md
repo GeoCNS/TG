@@ -43,15 +43,16 @@ The package contains:
 ### Install
 
 ```bash
-  # clone & install
-  git clone https://github.com/yourname/time-downscaling.git
-  cd time-downscaling
-  pip install -r requirements.txt
-  conda create -n tdscale python=3.11 -y
-  conda activate tdscale
+  # clone & setup
+  git clone https://github.com/GeoCNS/TG.git
+  cd TG
   
-  # download data
-  bash scripts/fetch_data.sh   # edits PATHS automatically
+  # (recommended) create a clean env first
+  conda create -n tg python=3.11 -y
+  conda activate tg
+  
+  # install dependencies
+  pip install -r requirements.txt
 ```
 
 ### Train (example: ERA5 2 → 1 h)
@@ -92,10 +93,10 @@ python src/train.py --config configs/noaa20_rh.yaml --infer --year 1913
 ## 🧪Citation
 
 @article{Wang2025,
-  title  = {Token-Guided Self-Supervised Temporal Reconstruction of Subhourly Climate Dataset since 1806},
+  title  = {Self-Supervised Temporal Reconstruction of Subhourly Climate Records since 1806},
   author = {Wang},
-  journal= {Nature Machine Intelligence},
-  year   = {2025},
+  journal= {Nature Communications},
+  year   = {2025}
 }
 
 ## 🔓Licence & Contact
@@ -107,4 +108,5 @@ Questions or pull‑requests are welcome:
 
 
 📧 public_wlw@163.com
+
 
